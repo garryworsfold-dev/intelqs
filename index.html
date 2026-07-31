@@ -1,124 +1,199 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>IntelQS LLC FZ | Precision. Integrity. Commercial Intelligence.</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: 'Segoe UI', Calibri, sans-serif;
-      color: #2E2E2E;
-      background-color: #FFFFFF;
-    }
-    header {
-      background: linear-gradient(90deg, #0A3C7D, #00A8C6);
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-    header img {
-      height: 60px;
-      vertical-align: middle;
-    }
-    h1 {
-      margin: 10px 0 0;
-      font-family: 'Montserrat', sans-serif;
-      font-weight: 700;
-    }
-    h2 {
-      color: #0A3C7D;
-      border-bottom: 2px solid #00A8C6;
-      display: inline-block;
-      margin-bottom: 10px;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    .hero {
-      text-align: center;
-      background-color: #F5F7FA;
-      padding: 60px 20px;
-    }
-    .hero h2 {
-      font-size: 1.5em;
-      color: #0A3C7D;
-    }
-    .services ul, .projects ul {
-      list-style: none;
-      padding: 0;
-    }
-    .services li, .projects li {
-      padding: 5px 0;
-    }
-    footer {
-      background-color: #0A3C7D;
-      color: white;
-      text-align: center;
-      padding: 20px;
-      font-size: 0.9em;
-    }
-    a {
-      color: #00A8C6;
-      text-decoration: none;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IntelQS LLC FZ | Commercial & Quantity Surveying Consultancy</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background: #f4f6f9;
+    color: #333;
+  }
+
+  /* HEADER */
+  header {
+    background: #ffffff;
+    padding: 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+  header img {
+    height: 70px;
+  }
+  header h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    margin: 0;
+    color: #0A3C7D;
+  }
+
+  /* HERO */
+  .hero {
+    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+  .hero::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background: rgba(10, 60, 125, 0.65);
+  }
+  .hero-content {
+    position: relative;
+    color: white;
+    max-width: 700px;
+    animation: fadeIn 1.5s ease;
+  }
+  .hero-content h2 {
+    font-size: 2.5em;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+  }
+  .hero-content p {
+    font-size: 1.2em;
+    opacity: 0.9;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  /* SECTIONS */
+  section {
+    padding: 60px 40px;
+    max-width: 1100px;
+    margin: auto;
+  }
+  h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2em;
+    color: #0A3C7D;
+    margin-bottom: 20px;
+  }
+
+  /* SERVICES */
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+  }
+  .service-card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    border-top: 4px solid #00A8C6;
+    transition: transform 0.3s;
+  }
+  .service-card:hover {
+    transform: translateY(-5px);
+  }
+  .service-card h3 {
+    margin-top: 0;
+    font-family: 'Montserrat', sans-serif;
+    color: #0A3C7D;
+  }
+
+  /* PROJECTS */
+  .projects-list {
+    columns: 2;
+    font-size: 1.1em;
+  }
+
+  /* CONTACT */
+  .contact p {
+    font-size: 1.2em;
+    margin: 8px 0;
+  }
+
+  /* FOOTER */
+  footer {
+    background: linear-gradient(135deg, #0A3C7D, #00A8C6);
+    color: white;
+    text-align: center;
+    padding: 30px;
+    margin-top: 40px;
+    font-size: 1em;
+  }
+</style>
 </head>
+
 <body>
 
-  <header>
-    <!-- Replace src with your logo file -->
-    <img src="logo.png" alt="IntelQS LLC FZ Logo" />
-    <h1>IntelQS LLC FZ</h1>
-    <p>Precision • Integrity • Commercial Intelligence</p>
-  </header>
+<header>
+  <img src="logo.png" alt="IntelQS Logo">
+  <h1>IntelQS LLC FZ</h1>
+</header>
 
-  <section class="hero">
-    <h2>About IntelQS LLC FZ</h2>
-    <p>IntelQS LLC FZ delivers expert quantity surveying, commercial management and operational advisory services across the UAE and internationally. Founded by Garry Worsfold, the company brings over 30 years of global experience in construction, manufacturing, and industrial operations.</p>
-  </section>
+<div class="hero">
+  <div class="hero-content">
+    <h2>Commercial & Quantity Surveying Excellence</h2>
+    <p>Delivering precision, integrity and commercial intelligence across the UAE and internationally.</p>
+  </div>
+</div>
 
-  <section class="services">
-    <h2>Our Services</h2>
-    <ul>
-      <li>Quantity Surveying</li>
-      <li>Commercial Management</li>
-      <li>Cost Control & Forecasting</li>
-      <li>Tendering & Estimating</li>
-      <li>Applications for Payment (AFP)</li>
-      <li>Contract Reviews</li>
-      <li>ISO & HSEQ Support</li>
-      <li>Operational Advisory</li>
-    </ul>
-  </section>
+<section>
+  <h2>About IntelQS</h2>
+  <p>IntelQS LLC FZ is a UAE-based commercial and quantity surveying consultancy founded by Garry Worsfold. With over 30 years of international experience across the UK, Ireland, Middle East, India and the USA, IntelQS provides high-integrity commercial, financial and operational support to construction and industrial clients.</p>
+</section>
 
-  <section class="projects">
-    <h2>Major Projects</h2>
-    <ul>
-      <li>Intel (Ireland)</li>
-      <li>Wuxi Biologics (Ireland)</li>
-      <li>22 & 100 Bishopsgate (London)</li>
-      <li>Crossrail (London)</li>
-      <li>Guys Hospital (London)</li>
-      <li>London Olympic Games</li>
-      <li>Ras Laffan Gas (Qatar)</li>
-      <li>Rock of Gibraltar</li>
-      <li>Golden Gate Bridge (USA)</li>
-    </ul>
-  </section>
+<section>
+  <h2>Our Services</h2>
+  <div class="services-grid">
+    <div class="service-card"><h3>Quantity Surveying</h3></div>
+    <div class="service-card"><h3>Commercial Management</h3></div>
+    <div class="service-card"><h3>Cost Control & Forecasting</h3></div>
+    <div class="service-card"><h3>Tendering & Estimating</h3></div>
+    <div class="service-card"><h3>Applications for Payment (AFP)</h3></div>
+    <div class="service-card"><h3>Contract Reviews</h3></div>
+    <div class="service-card"><h3>ISO & HSEQ Support</h3></div>
+    <div class="service-card"><h3>Operational Advisory</h3></div>
+  </div>
+</section>
 
-  <section class="contact">
-    <h2>Contact Us</h2>
-    <p>📍 RAKEZ Business Zone, Ras Al Khaimah, UAE</p>
-    <p>📞 +44 (0)7508 804247</p>
-    <p>✉️ <a href="mailto:info@intelqs.com">info@intelqs.com</a></p>
-  </section>
+<section>
+  <h2>Major Projects Delivered</h2>
+  <div class="projects-list">
+    Intel (Ireland)<br>
+    Wuxi Biologics (Ireland)<br>
+    22 & 100 Bishopsgate (London)<br>
+    Crossrail (London)<br>
+    Guys Hospital (London)<br>
+    London Olympic Games<br>
+    Ras Laffan Gas (Qatar)<br>
+    Rock of Gibraltar<br>
+    Golden Gate Bridge (USA)<br>
+  </div>
+</section>
 
-  <footer>
-    © 2026 IntelQS LLC FZ | Precision • Integrity • Commercial Intelligence
-  </footer>
+<section class="contact">
+  <h2>Contact Us</h2>
+  <p>📍 RAKEZ Business Zone, Ras Al Khaimah, UAE</p>
+  <p>📞 +44 (0)7508 804247</p>
+  <p>✉️ info@intelqs.com</p>
+</section>
+
+<footer>
+  © 2026 IntelQS LLC FZ — Precision • Integrity • Commercial Intelligence
+</footer>
 
 </body>
 </html>
