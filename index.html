@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IntelQS LLC FZ | Commercial & Quantity Surveying Consultancy</title>
 
-<!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
 
 <style>
@@ -16,10 +15,10 @@
     color: #333;
   }
 
-  /* HEADER */
-  header {
+  /* NAVIGATION */
+  nav {
     background: #ffffff;
-    padding: 20px 40px;
+    padding: 15px 40px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -28,52 +27,47 @@
     top: 0;
     z-index: 100;
   }
-  header img {
-    height: 70px;
+  nav img {
+    height: 60px;
   }
-  header h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 1.8em;
-    margin: 0;
+  nav a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-weight: 600;
     color: #0A3C7D;
+    font-family: 'Montserrat', sans-serif;
+  }
+  nav a:hover {
+    color: #00A8C6;
   }
 
-  /* HERO */
+  /* HERO — LIGHT GEOMETRIC DATA BACKGROUND */
   .hero {
-    background: url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
-    height: 70vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: linear-gradient(135deg, #ffffff, #f2f7fa);
+    background-image:
+      linear-gradient(135deg, rgba(0,168,198,0.12) 0%, rgba(255,255,255,0) 60%),
+      linear-gradient(225deg, rgba(10,60,125,0.12) 0%, rgba(255,255,255,0) 60%),
+      repeating-linear-gradient(
+        45deg,
+        rgba(0,0,0,0.03),
+        rgba(0,0,0,0.03) 2px,
+        transparent 2px,
+        transparent 6px
+      );
+    padding: 120px 20px;
     text-align: center;
-    position: relative;
   }
-  .hero::before {
-    content: "";
-    position: absolute;
-    top: 0; left: 0;
-    width: 100%; height: 100%;
-    background: rgba(10, 60, 125, 0.65);
-  }
-  .hero-content {
-    position: relative;
-    color: white;
-    max-width: 700px;
-    animation: fadeIn 1.5s ease;
-  }
-  .hero-content h2 {
-    font-size: 2.5em;
+  .hero h1 {
+    font-size: 2.8em;
     font-family: 'Montserrat', sans-serif;
+    color: #0A3C7D;
     margin-bottom: 10px;
   }
-  .hero-content p {
+  .hero p {
     font-size: 1.2em;
-    opacity: 0.9;
-  }
-
-  @keyframes fadeIn {
-    from { opacity: 0; transform: translateY(20px); }
-    to { opacity: 1; transform: translateY(0); }
+    max-width: 700px;
+    margin: auto;
+    color: #555;
   }
 
   /* SECTIONS */
@@ -101,10 +95,6 @@
     border-radius: 10px;
     box-shadow: 0 4px 15px rgba(0,0,0,0.08);
     border-top: 4px solid #00A8C6;
-    transition: transform 0.3s;
-  }
-  .service-card:hover {
-    transform: translateY(-5px);
   }
   .service-card h3 {
     margin-top: 0;
@@ -112,47 +102,38 @@
     color: #0A3C7D;
   }
 
-  /* PROJECTS */
-  .projects-list {
-    columns: 2;
-    font-size: 1.1em;
-  }
-
-  /* CONTACT */
-  .contact p {
-    font-size: 1.2em;
-    margin: 8px 0;
-  }
-
   /* FOOTER */
   footer {
-    background: linear-gradient(135deg, #0A3C7D, #00A8C6);
+    background: #0A3C7D;
     color: white;
     text-align: center;
     padding: 30px;
     margin-top: 40px;
-    font-size: 1em;
   }
 </style>
 </head>
 
 <body>
 
-<header>
+<nav>
   <img src="logo.png" alt="IntelQS Logo">
-  <h1>IntelQS LLC FZ</h1>
-</header>
+  <div>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="services.html">Services</a>
+    <a href="projects.html">Projects</a>
+    <a href="contact.html">Contact</a>
+  </div>
+</nav>
 
 <div class="hero">
-  <div class="hero-content">
-    <h2>Commercial & Quantity Surveying Excellence</h2>
-    <p>Delivering precision, integrity and commercial intelligence across the UAE and internationally.</p>
-  </div>
+  <h1>IntelQS LLC FZ</h1>
+  <p>Precision • Integrity • Commercial Intelligence</p>
 </div>
 
 <section>
-  <h2>About IntelQS</h2>
-  <p>IntelQS LLC FZ is a UAE-based commercial and quantity surveying consultancy founded by Garry Worsfold. With over 30 years of international experience across the UK, Ireland, Middle East, India and the USA, IntelQS provides high-integrity commercial, financial and operational support to construction and industrial clients.</p>
+  <h2>Welcome to IntelQS</h2>
+  <p>IntelQS LLC FZ is a UAE-based commercial and quantity surveying consultancy founded by Garry Worsfold. With over 30 years of international experience, IntelQS provides high-integrity commercial, financial and operational support to construction and industrial clients.</p>
 </section>
 
 <section>
@@ -167,28 +148,6 @@
     <div class="service-card"><h3>ISO & HSEQ Support</h3></div>
     <div class="service-card"><h3>Operational Advisory</h3></div>
   </div>
-</section>
-
-<section>
-  <h2>Major Projects Delivered</h2>
-  <div class="projects-list">
-    Intel (Ireland)<br>
-    Wuxi Biologics (Ireland)<br>
-    22 & 100 Bishopsgate (London)<br>
-    Crossrail (London)<br>
-    Guys Hospital (London)<br>
-    London Olympic Games<br>
-    Ras Laffan Gas (Qatar)<br>
-    Rock of Gibraltar<br>
-    Golden Gate Bridge (USA)<br>
-  </div>
-</section>
-
-<section class="contact">
-  <h2>Contact Us</h2>
-  <p>📍 RAKEZ Business Zone, Ras Al Khaimah, UAE</p>
-  <p>📞 +44 (0)7508 804247</p>
-  <p>✉️ info@intelqs.com</p>
 </section>
 
 <footer>
