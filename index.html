@@ -1,244 +1,415 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>IntelQS | Quantity Surveying & Commercial Management Consultancy</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description"
-        content="Professional Quantity Surveying, Commercial Management, Cost Control and Contract Support delivered by IntelQS with over 30 years of international experience.">
+<title>IntelQS | Quantity Surveying & Commercial Management Consultancy</title>
 
-    <meta name="keywords"
-        content="Quantity Surveying, Commercial Management, Cost Control, Construction Consultancy, Contract Administration, Tendering, Estimating">
+<meta name="description" content="Professional Quantity Surveying, Commercial Management, Cost Control and Contract Support delivered by IntelQS with over 30 years of international experience.">
 
-    <meta name="author" content="IntelQS">
+<meta name="keywords" content="Quantity Surveying, Commercial Management, Cost Control, Construction Consultancy, Contract Administration, Estimating, Tendering">
 
-    <link rel="icon" type="image/png" href="Logo.png">
+<meta name="author" content="IntelQS">
 
-    https://fonts.googleapis.com">
-    .com" crossorigin>
+<link rel="icon" type="image/png" href="logo.png">
 
-    ght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+.gstatic.com" crossorigin>
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-617ZLKL4SN"></script>
-    <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag() { dataLayer.push(arguments); }
-        gtag('js', new Date());
+@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
 
-        gtag('config', 'G-617ZLKL4SN');
-    </script>
+<!-- Google Analytics -->
+https://www.googletagmanager.com/gtag/js?id=G-617ZLKL4SN"></script>
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
 
-        body {
-            font-family: 'Inter', sans-serif;
-            color: #333;
-            background: #f5f7fa;
-            line-height: 1.7;
-        }
+gtag('config', 'G-617ZLKL4SN');
+</script>
 
-        nav {
-            background: #fff;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 15px 30px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
+<style>
 
-        .logo {
-            height: 60px;
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
-        .nav-links a {
-            margin-left: 20px;
-            text-decoration: none;
-            color: #0A3C7D;
-            font-weight: 600;
-            font-family: 'Montserrat', sans-serif;
-        }
+body {
+    font-family: 'Inter', sans-serif;
+    background: #f5f7fa;
+    color: #333;
+    line-height: 1.6;
+}
 
-        .nav-links a:hover {
-            color: #00A8C6;
-        }
+nav {
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
 
-        .hero {
-            background: linear-gradient(135deg, #ffffff, #edf4f8);
-            padding: 120px 20px;
-            text-align: center;
-        }
+.logo {
+    height: 70px;
+}
 
-        .hero h1 {
-            font-family: 'Montserrat', sans-serif;
-            color: #0A3C7D;
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
+.nav-links a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: #0A3C7D;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
 
-        .hero p {
-            max-width: 850px;
-            margin: auto;
-            font-size: 1.2rem;
-        }
+.nav-links a:hover {
+    color: #00A8C6;
+}
 
-        .buttons {
-            margin-top: 35px;
-        }
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(135deg,#ffffff,#eef5fa);
+}
 
-        .btn {
-            display: inline-block;
-            padding: 14px 28px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 600;
-            margin: 5px;
-        }
+.hero h1 {
+    font-family: 'Montserrat', sans-serif;
+    color: #0A3C7D;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
 
-        .btn-primary {
-            background: #0A3C7D;
-            color: white;
-        }
+.hero p {
+    max-width: 850px;
+    margin: auto;
+    font-size: 1.2rem;
+}
 
-        .btn-secondary {
-            background: #00A8C6;
-            color: white;
-        }
+.buttons {
+    margin-top: 30px;
+}
 
-        section {
-            max-width: 1200px;
-            margin: auto;
-            padding: 70px 20px;
-        }
+.btn {
+    display: inline-block;
+    padding: 14px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    margin: 5px;
+}
 
-        h2 {
-            color: #0A3C7D;
-            font-family: 'Montserrat', sans-serif;
-            margin-bottom: 20px;
-            font-size: 2rem;
-        }
+.btn-primary {
+    background: #0A3C7D;
+    color: white;
+}
 
-        .highlight {
-            background: white;
-            padding: 30px;
-            border-radius: 10px;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
+.btn-secondary {
+    background: #00A8C6;
+    color: white;
+}
 
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
+section {
+    max-width: 1200px;
+    margin: auto;
+    padding: 70px 20px;
+}
 
-        .card {
-            background: white;
-            padding: 25px;
-            border-radius: 10px;
-            border-top: 4px solid #00A8C6;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.08);
-        }
+h2 {
+    color: #0A3C7D;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
 
-        .card h3 {
-            margin-bottom: 10px;
-            color: #0A3C7D;
-        }
+.panel {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
 
-        .projects {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 15px;
-        }
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 20px;
+}
 
-        .project {
-            background: white;
-            padding: 18px;
-            border-left: 4px solid #00A8C6;
-            border-radius: 6px;
-        }
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 10px;
+    border-top: 4px solid #00A8C6;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
 
-        .cta {
-            background: #0A3C7D;
-            color: white;
-            text-align: center;
-            padding: 80px 20px;
-        }
+.card h3 {
+    color: #0A3C7D;
+    margin-bottom: 10px;
+}
 
-        .cta h2 {
-            color: white;
-        }
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,1fr));
+    gap: 15px;
+}
 
-        footer {
-            background: #06234a;
-            color: white;
-            text-align: center;
-            padding: 30px;
-        }
+.project {
+    background: white;
+    padding: 15px;
+    border-left: 4px solid #00A8C6;
+    border-radius: 6px;
+}
 
-        footer a {
-            color: white;
-        }
+.cta {
+    background: #0A3C7D;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
 
-        @media (max-width:768px) {
+.cta h2 {
+    color: white;
+}
 
-            nav {
-                flex-direction: column;
-                gap: 15px;
-            }
+footer {
+    background: #06234a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
 
-            .nav-links {
-                display: flex;
-                flex-direction: column;
-                text-align: center;
-            }
+footer a {
+    color: white;
+}
 
-            .nav-links a {
-                margin: 8px 0;
-            }
+@media (max-width:768px) {
 
-            .hero h1 {
-                font-size: 2rem;
-            }
+    nav {
+        flex-direction: column;
+        text-align: center;
+    }
 
-            .hero p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    .nav-links {
+        margin-top: 15px;
+    }
+
+    .nav-links a {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .logo {
+        height: 60px;
+    }
+}
+
+</style>
 
 </head>
 
 <body>
 
-    <nav>
+<nav>
 
-        <img src="Logo.png" alt="IntelQS Logo" class="logo">
+.png" alt="IntelQS Logo" class="logo">
 
-        <div class="nav-links">
-            <a href="index.html">Home</a>
-            <a href="about.html">About</a>
-            <a href="services.html">Services</a>
-            <a href="projects.html">Projects</a>
-            <a href="contact.html">Contact</a>
-        </div>
+<div class="nav-links">
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="projects.html">Projects</a>
+<a href="contact.html">Contact</a>
+</div>
 
-    </nav>
+</nav>
 
-    <section class="hero">
+<section class="hero">
 
-        <h1>Quantity Surveying & Commercial Management Consultancy</h1>
+<h1>Quantity Surveying & Commercial Management Consultancy</h1>
 
-        <p>
-            Over 30 years of international experience delivering commercial,
-            contractual and cost 
+<p>
+Over 30 years of international experience delivering commercial,
+contractual and cost management support for construction,
+engineering and industrial projects across the UK, UAE and international markets.
+</p>
+
+<div class="buttons">
+<a href="contact.html" class="btn btn-primary">Request a Consultation</a>
+<a href="services.html" class="btn btn-secondary">Our Services</a>
+</div>
+
+</section>
+
+<section>
+
+<h2>About IntelQS</h2>
+
+<div class="panel">
+
+<p>
+IntelQS provides professional Quantity Surveying, Commercial Management,
+Cost Control and Contract Administration services to construction,
+engineering and industrial clients.
+</p>
+
+<br>
+
+<p>
+With experience gained on major projects throughout the UK, Ireland,
+Middle East, India and North America, IntelQS delivers practical,
+commercially focused solutions that improve performance and protect profitability.
+</p>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Why Choose IntelQS?</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>30+ Years Experience</h3>
+<p>Extensive international commercial and project experience.</p>
+</div>
+
+<div class="card">
+<h3>Global Project Portfolio</h3>
+<p>Experience across Europe, the Middle East and North America.</p>
+</div>
+
+<div class="card">
+<h3>Commercial Expertise</h3>
+<p>Strong contractual, financial and operational knowledge.</p>
+</div>
+
+<div class="card">
+<h3>Independent Advice</h3>
+<p>Practical support focused on successful project outcomes.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Core Services</h2>
+
+<div class="grid">
+
+<div class="card">
+<h3>Quantity Surveying</h3>
+<p>Cost planning, valuations, reporting and final accounts.</p>
+</div>
+
+<div class="card">
+<h3>Commercial Management</h3>
+<p>Commercial leadership throughout project delivery.</p>
+</div>
+
+<div class="card">
+<h3>Cost Control & Forecasting</h3>
+<p>Accurate budgeting and commercial reporting.</p>
+</div>
+
+<div class="card">
+<h3>Contract Support</h3>
+<p>Payment applications, reviews and risk management.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Selected Project Experience</h2>
+
+<div class="project-grid">
+
+<div class="project">Crossrail, London</div>
+<div class="project">London Olympic Games</div>
+<div class="project">Intel Ireland</div>
+<div class="project">WuXi Biologics</div>
+<div class="project">22 Bishopsgate</div>
+<div class="project">100 Bishopsgate</div>
+<div class="project">Guy's Hospital</div>
+<div class="project">Ras Laffan Industrial City</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2>Meet the Founder</h2>
+
+<div class="panel">
+
+<p>
+Garry Worsfold is a Commercial and Quantity Surveying professional with
+more than 30 years of international experience supporting major
+construction, infrastructure, industrial and pharmaceutical projects.
+</p>
+
+<br>
+
+<p>
+IntelQS was founded on the principles of Precision, Integrity and
+Commercial Intelligence, helping clients improve profitability,
+control risk and achieve successful project outcomes.
+</p>
+
+</div>
+
+</section>
+
+<section class="cta">
+
+<h2>Need Commercial Support?</h2>
+
+<p>
+Contact IntelQS today to discuss your project requirements.
+</p>
+
+<br>
+
+<p><strong>Email:</strong> info@intelqs.com</p>
+<p><strong>Phone:</strong> +44 (0)7508 804247</p>
+
+<br>
+
+<a href="contact.html" class="btn btn-secondary">Contact Us</a>
+
+</section>
+
+<footer>
+
+<p><strong>IntelQS LLC FZ</strong></p>
+
+<p>RAKEZ Business Zone, Ras Al Khaimah, UAE</p>
+
+<p>+44 (0)7508 804247</p>
+
+<p>info@intelqs.com</p>
+
+<p><a href="privacy.html">Privacy Policy</a></p>
+
+<p>© 2026 IntelQS LLC FZ</p>
+
+</footer>
+
+</body>
+</html>
