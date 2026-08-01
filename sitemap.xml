@@ -1,0 +1,27 @@
+XML
+1
+<?xml version="1.0" encoding="UTF-8"?>
+2
+ 
+3
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+4
+ 
+5
+<url>
+6
+<loc>https://www.intelqs.com/</loc>
+7
+</url>
+8
+ 
+9
+<url>
+10
+<loc>https://www.intelqs.com/privacy.html</loc>
+11
+</url>
+12
+ 
+13
+</urlset>
